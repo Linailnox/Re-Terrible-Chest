@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "terriblechest",
+  "version": "1.0.0",
+  "name": "TerribleChest",
+  "description": "This module is the 1.20.1 Fabric port of Terrible Chest and removes the Terrible Bangle that were not working properly.",
+  "authors": [
+    "Linailox, ZephyrZeno"
+  ],
+  "contact": {
+    "homepage": "http://lacrus.top:66",
+    "sources": ""
+  },
+  "license": "Not specified",
+  "icon": "assets/terriblechest/icon.png",
+  "accessWidener": "terriblechest.accesswidener",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "lacrus.fuck.terriblechest.TerriblechestMod"
+    ],
+    "client": [
+      "lacrus.fuck.terriblechest.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "~1.20",
+    "java": ">=17"
+  },
+  "mixins": [
+    "terriblechest.mixins.json"
+  ]
+}

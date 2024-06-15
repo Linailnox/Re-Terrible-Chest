@@ -1,0 +1,59 @@
+plugins {
+    id 'fabric-loom' version '1.5-SNAPSHOT'
+}
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+archivesBaseName = 'modid'
+version = project.mod_version
+group = project.maven_group
+actualmodid = project.archives_base_name
+
+loom {
+    mixin {
+        defaultRefmapName = archives_base_name + ".refmap.json"
+    }
+    if (file("src/main/resources/terriblechest.accesswidener").exists())
+        accessWidenerPath = file("src/main/resources/terriblechest.accesswidener")
+}
+
+dependencies {
+    // To change the versions see the gradle.properties file
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+    // Fabric API. This is technically optional, but you probably want it anyway.
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "minecraft_version", project.minecraft_version
+    inputs.property "loader_version", project.loader_version
+    filteringCharset "UTF-8"
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version,
+                "minecraft_version": project.minecraft_version,
+                "loader_version": project.loader_version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 17
+}
+
+java {
+    withSourcesJar()
+
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+jar {
+    from "LICENSE"
+}
+
+apply from: 'mcreator.gradle'

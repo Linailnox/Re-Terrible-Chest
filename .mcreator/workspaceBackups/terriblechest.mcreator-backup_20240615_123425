@@ -1,0 +1,155 @@
+{
+  "mod_elements": [
+    {
+      "name": "TerribleChest",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "terrible_chest",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/terriblechest/models/item/terrible_chest.json",
+          "src/main/java/lacrus/fuck/terriblechest/block/entity/TerribleChestBlockEntity.java",
+          "src/main/resources/assets/terriblechest/blockstates/terrible_chest.json",
+          "src/main/resources/assets/terriblechest/models/block/terrible_chest.json",
+          "src/main/java/lacrus/fuck/terriblechest/block/TerribleChestBlock.java"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "MultiPageScreen",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "multi_page_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/lacrus/fuck/terriblechest/client/gui/MultiPageScreenScreen.java",
+          "src/main/java/lacrus/fuck/terriblechest/world/inventory/MultiPageScreenMenu.java"
+        ]
+      },
+      "path": "~/Gui"
+    },
+    {
+      "name": "LoadMultiPageScreen",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "load_multi_page_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/lacrus/fuck/terriblechest/procedures/LoadMultiPageScreenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gui"
+    },
+    {
+      "name": "DiamondSphere",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_sphere",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/terriblechest/models/item/diamond_sphere.json",
+          "src/main/java/lacrus/fuck/terriblechest/item/DiamondSphereItem.java"
+        ]
+      },
+      "path": "~/Item"
+    },
+    {
+      "name": "CompositeDiamondSphere",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "composite_diamond_sphere",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/terriblechest/recipes/composite_diamond_sphere.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CompositeTerribleChest",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "composite_terrible_chest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/terriblechest/recipes/composite_terrible_chest.json"
+        ]
+      },
+      "path": "~/Recipes"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.terriblechest.terrible_chest": "Terrible Chest",
+      "item.terriblechest.diamond_sphere": "Diamond Sphere",
+      "gui.terriblechest.multi_page_screen.label_11": "1/1",
+      "gui.terriblechest.multi_page_screen.label_terrible_chest": "Terrible Chest"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Block",
+        "children": []
+      },
+      {
+        "name": "Gui",
+        "children": []
+      },
+      {
+        "name": "Item",
+        "children": []
+      },
+      {
+        "name": "Utils",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "terriblechest",
+    "modName": "TerribleChest",
+    "version": "1.0.0",
+    "description": "This module is the 1.20.1 Fabric port of Terrible Chest and removes the Terrible Bangle that were not working properly.",
+    "author": "Linailox, ZephyrZeno",
+    "websiteURL": "http://lacrus.top:66",
+    "license": "Not specified",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "terrible_chest",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "lacrus.fuck.terriblechest",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

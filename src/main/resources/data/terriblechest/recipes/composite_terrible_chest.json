@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "composite_terrible_chest",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "item": "terriblechest:terrible_chest",
+    "count": 1
+  }
+}

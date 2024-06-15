@@ -1,0 +1,9 @@
+{
+  "parent": "terriblechest:custom/terrible_chest",
+  "textures": {
+    "all": "terriblechest:block/terrible_chest",
+    "particle": "terriblechest:block/terrible_chest",
+    "texture": "terriblechest:block/terrible_chest"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "texture": "terrible_chest"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "composite_diamond_sphere",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aaa",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "item": "terriblechest:diamond_sphere",
+    "count": 1
+  }
+}

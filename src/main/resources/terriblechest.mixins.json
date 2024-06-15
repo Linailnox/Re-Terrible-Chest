@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "lacrus.fuck.terriblechest.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+      "TerriblechestModRepairItemRecipeMixin"  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
